@@ -1,0 +1,24 @@
+{
+  "name": "arete-cdk-example",
+  "version": "0.1.0",
+  "description": "Example application using arete-cdk library",
+  "main": "lib/app.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "clean": "rm -rf lib/ cdk.out/"
+  },
+  "dependencies": {
+    "arete-cdk": "file:.."
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "aws-cdk-lib": "^2.80.0",
+    "aws-cdk": "^2.80.0",
+    "constructs": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}
