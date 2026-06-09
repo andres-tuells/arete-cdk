@@ -1,11 +1,8 @@
 import * as cdk from 'aws-cdk-lib';
-import { HelloWorldStack } from 'arete-cdk';
+import { ExampleStaticSiteStack } from './example-static-site-stack';
 
 const app = new cdk.App();
 
-new HelloWorldStack(app, 'HelloWorldStack', {
-  // You can add stack properties here
-  // env: { account: '123456789012', region: 'us-east-1' }
-});
+new ExampleStaticSiteStack(app, 'ExampleStaticSite');
 
 app.synth();
